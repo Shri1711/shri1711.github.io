@@ -1,28 +1,26 @@
-// Typing effect
-const text = ".NET Developer | ASP.NET Core | Angular";
-let i = 0;
-const typing = document.querySelector(".typing");
+// Typing animation
+const text = "Shrinivas Umanwar | .NET Developer";
+let index = 0;
+const speed = 80;
 
 function typeEffect() {
-  if (i < text.length) {
-    typing.textContent += text.charAt(i);
-    i++;
-    setTimeout(typeEffect, 70);
+  if (index < text.length) {
+    document.querySelector(".typing").innerHTML += text.charAt(index);
+    index++;
+    setTimeout(typeEffect, speed);
   }
 }
+
 typeEffect();
 
 // Scroll animation
-const fades = document.querySelectorAll(".fade");
+const reveals = document.querySelectorAll(".reveal-left, .reveal-right, .reveal-full");
 
 window.addEventListener("scroll", () => {
-  fades.forEach(el => {
-    const top = el.getBoundingClientRect().top;
+  reveals.forEach(section => {
+    const top = section.getBoundingClientRect().top;
     if (top < window.innerHeight - 100) {
-      el.classList.add("active");
+      section.classList.add("reveal-active");
     }
   });
 });
-
-// Trigger initial
-window.dispatchEvent(new Event("scroll"));
