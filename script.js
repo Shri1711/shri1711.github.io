@@ -1,26 +1,28 @@
-// Typing animation
-const text = "Shrinivas Umanwar | .NET Developer";
+// Typing Effect
+const text = ".NET Developer | C# | Angular | SQL Server";
 let index = 0;
 const speed = 80;
+const typingElement = document.querySelector(".typing");
 
 function typeEffect() {
   if (index < text.length) {
-    document.querySelector(".typing").innerHTML += text.charAt(index);
+    typingElement.innerHTML += text.charAt(index);
     index++;
     setTimeout(typeEffect, speed);
   }
 }
-
 typeEffect();
 
-// Scroll animation
-const reveals = document.querySelectorAll(".reveal-left, .reveal-right, .reveal-full");
+// Scroll Reveal
+const reveals = document.querySelectorAll(".reveal");
 
 window.addEventListener("scroll", () => {
   reveals.forEach(section => {
     const top = section.getBoundingClientRect().top;
-    if (top < window.innerHeight - 100) {
-      section.classList.add("reveal-active");
+    const height = window.innerHeight;
+
+    if (top < height - 100) {
+      section.classList.add("active");
     }
   });
 });
