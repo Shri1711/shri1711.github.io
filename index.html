@@ -2,73 +2,69 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Shrinivas Umanwar | .NET Developer</title>
-  <link rel="stylesheet" href="style.css">
-</head>
 
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
 <body>
 
-  <div class="background-glow"></div>
+  <!-- NAVBAR -->
+  <nav>
+    <h2 class="logo">SHRI<span>.</span></h2>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
   <!-- HERO -->
-  <header class="hero">
-    <h1 class="fade">Shrinivas Umanwar</h1>
-    <h2 class="typing"></h2>
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Hello, I'm</h1>
+      <h2><span class="typing"></span></h2>
+      <p>
+        .NET Developer at LTIMindtree with 1+ year experience in
+        ASP.NET Core, Web API, Angular & SQL Server.
+      </p>
 
-    <div class="cta fade delay-1">
-      <a href="resume/Shrinivas_Umanwar_DotNet_Developer.pdf" target="_blank" class="btn primary">Download Resume</a>
-      <a href="https://www.linkedin.com/in/shri1711" target="_blank" class="btn outline">LinkedIn</a>
-      <a href="https://github.com/Shri1711" target="_blank" class="btn outline">GitHub</a>
+      <div class="buttons">
+        <a href="assets/resume.pdf" download class="btn">Download Resume</a>
+        <a href="https://github.com/Shri1711" target="_blank" class="btn-outline">GitHub</a>
+        <a href="https://www.linkedin.com/in/shri1711" target="_blank" class="btn-outline">LinkedIn</a>
+      </div>
     </div>
-  </header>
+  </section>
 
   <!-- ABOUT -->
-  <section class="section fade">
-    <h3>About Me</h3>
+  <section id="about" class="about reveal-left">
+    <h2>About Me</h2>
     <p>
-      I am a Software Engineer at LTIMindtree with 1+ year of experience working on
-      enterprise applications for Eaton. I specialize in ASP.NET Core Web APIs,
-      Angular-based frontends, and SQL Server, delivering production-ready features
-      in Agile environments.
+      I'm a backend-focused .NET Developer working on enterprise applications
+      for the Eaton client at LTIMindtree. I build REST APIs, integrate Angular
+      frontends, and work with SQL Server in Agile environments.
     </p>
   </section>
 
-  <!-- SKILLS -->
-  <section class="section fade">
-    <h3>Core Skills</h3>
-    <div class="skills">
-      <span>C#</span>
-      <span>ASP.NET Core</span>
-      <span>Web API</span>
-      <span>Angular</span>
-      <span>SQL Server</span>
-      <span>Entity Framework Core</span>
-      <span>Azure DevOps</span>
-      <span>JWT Authentication</span>
-      <span>Agile Scrum</span>
-    </div>
-  </section>
+  <!-- PROJECTS -->
+  <section id="projects" class="projects reveal-right">
+    <h2>Projects</h2>
 
-  <!-- PROJECT -->
-  <section class="section fade">
-    <h3>Featured Project</h3>
-
-    <div class="project">
-      <h4>Training Hub</h4>
+    <div class="project-card">
+      <h3>Training Hub</h3>
       <p>
-        Full-stack training management platform built using ASP.NET Core, Angular,
-        and SQL Server. Includes JWT authentication, role-based access control,
-        trainer-member workflows, and secure API integration.
+        Full-stack application using ASP.NET Core, Web API, Angular, and SQL Server.
+        Implemented JWT authentication and role-based access control.
       </p>
-      <a href="https://github.com/Shri1711/Training-Hub" target="_blank">View on GitHub →</a>
+      <a href="https://github.com/Shri1711/Training-Hub" target="_blank">View on GitHub</a>
     </div>
-  </section>
 
-  <footer>
-    <p>© 2026 Shrinivas Umanwar</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+    <div class="project-card">
+      <h3>ATM Machine (Java)</h3>
+      <p>
+        Console-based ATM simulation using Java and OOP principles.
+      </p>
+      <a href="https://github.com/Shri1711/ATM"
