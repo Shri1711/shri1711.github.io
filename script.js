@@ -1,28 +1,26 @@
-// Typing Effect
-const text = ".NET Developer | C# | Angular | SQL Server";
-let index = 0;
-const speed = 80;
-const typingElement = document.querySelector(".typing");
+// Typing animation
+const text = ".NET Developer | C# | ASP.NET Core | Angular | SQL Server";
+let i = 0;
+const speed = 70;
+const typing = document.querySelector(".typing");
 
 function typeEffect() {
-  if (index < text.length) {
-    typingElement.innerHTML += text.charAt(index);
-    index++;
+  if (i < text.length) {
+    typing.innerHTML += text.charAt(i);
+    i++;
     setTimeout(typeEffect, speed);
   }
 }
 typeEffect();
 
-// Scroll Reveal
+// Scroll reveal
 const reveals = document.querySelectorAll(".reveal");
 
 window.addEventListener("scroll", () => {
-  reveals.forEach(section => {
-    const top = section.getBoundingClientRect().top;
-    const height = window.innerHeight;
-
-    if (top < height - 100) {
-      section.classList.add("active");
+  reveals.forEach(r => {
+    const top = r.getBoundingClientRect().top;
+    if (top < window.innerHeight - 100) {
+      r.classList.add("active");
     }
   });
 });
