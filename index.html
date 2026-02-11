@@ -8,58 +8,81 @@
 </head>
 <body>
 
+<nav>
+    <div class="logo">Shri1711</div>
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
 <header>
     <h1>Shrinivas Umanwar</h1>
     <p>.NET Developer | ASP.NET Core | Angular | SQL Server</p>
+    <a href="assets/resume.pdf" target="_blank" class="btn">Download Resume</a>
 </header>
 
-<section>
+<section id="about">
     <h2>About Me</h2>
     <p>
         .NET Developer with 1+ year of experience at LTIMindtree working on enterprise applications for Eaton.
-        Experienced in building RESTful APIs using ASP.NET Core and developing Angular-based frontend
-        applications integrated with SQL Server databases. Strong understanding of Agile workflows
-        and feature ownership.
+        I build RESTful APIs, integrate Angular frontends, and design structured SQL Server databases
+        while working in Agile environments.
     </p>
 </section>
 
-<section>
+<section id="experience">
     <h2>Experience</h2>
-    <h3>Software Engineer – LTIMindtree</h3>
-    <p><strong>Client:</strong> Eaton | March 2025 – Present</p>
-    <ul>
-        <li>Developed RESTful APIs using ASP.NET Core Web API and C#.</li>
-        <li>Built Angular UI components integrated with backend services.</li>
-        <li>Worked with SQL Server for data management.</li>
-        <li>Managed deployments via Azure DevOps.</li>
-        <li>Acted as primary offshore developer in a two-member team.</li>
-    </ul>
+    <div class="card">
+        <h3>Software Engineer – LTIMindtree</h3>
+        <p><strong>Client:</strong> Eaton | March 2025 – Present</p>
+        <ul>
+            <li>Developed ASP.NET Core REST APIs.</li>
+            <li>Built Angular UI components integrated with backend services.</li>
+            <li>Worked with SQL Server for data persistence.</li>
+            <li>Managed deployments via Azure DevOps.</li>
+            <li>Primary offshore developer in two-member team.</li>
+        </ul>
+    </div>
 </section>
 
-<section>
+<section id="projects">
     <h2>Projects</h2>
-    <h3>Training Hub</h3>
-    <p><strong>Tech Stack:</strong> ASP.NET Core, Angular, SQL Server, JWT</p>
-    <ul>
-        <li>Implemented JWT authentication and role-based access control.</li>
-        <li>Developed REST APIs for training management.</li>
-        <li>Integrated Angular frontend with backend services.</li>
-        <li>Designed SQL Server database schema.</li>
-    </ul>
+    <div class="grid">
+        <div class="card">
+            <h3>Training Hub</h3>
+            <p>Role-based training management system.</p>
+            <p><strong>Tech:</strong> ASP.NET Core, Angular, SQL Server, JWT</p>
+        </div>
+    </div>
 </section>
 
-<section>
+<section id="skills">
     <h2>Skills</h2>
-    <p><strong>Languages:</strong> C#, TypeScript, Java</p>
-    <p><strong>Backend:</strong> ASP.NET Core, Web API, Entity Framework Core</p>
-    <p><strong>Frontend:</strong> Angular, HTML, CSS</p>
-    <p><strong>Database:</strong> SQL Server</p>
-    <p><strong>Tools:</strong> Azure DevOps, Git</p>
-</section>
 
-<section>
-    <h2>Certification</h2>
-    <p>Google Cloud Certified – Professional Data Engineer</p>
+    <div class="skill">
+        <p>C# / ASP.NET Core</p>
+        <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>Angular</p>
+        <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>SQL Server</p>
+        <div class="skill-bar"><div class="skill-fill" data-width="75%"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>Azure DevOps</p>
+        <div class="skill-bar"><div class="skill-fill" data-width="70%"></div></div>
+    </div>
+
 </section>
 
 <section id="contact">
@@ -67,11 +90,14 @@
     <p>Email: <a href="mailto:shrinivasumanwar2002@gmail.com">shrinivasumanwar2002@gmail.com</a></p>
     <p>
         <a href="https://www.linkedin.com/in/shri1711" target="_blank">LinkedIn</a> |
-        <a href="https://github.com/Shri1711" target="_blank">GitHub</a> |
-        <a href="assets/resume.pdf" target="_blank">Download Resume</a>
+        <a href="https://github.com/Shri1711" target="_blank">GitHub</a>
     </p>
 </section>
 
+<footer>
+    © 2026 Shrinivas Umanwar | Built with HTML, CSS & JS
+</footer>
 
+<script src="script.js"></script>
 </body>
 </html>
