@@ -2,13 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 body {
-    background: #0b1120;
-    color: #e5e7eb;
-    line-height: 1.6;
+    background: #0f0f14;
+    color: #e4e4e7;
+    line-height: 1.7;
+    overflow-x: hidden;
 }
 
 /* Navbar */
@@ -16,144 +17,183 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 20px 40px;
-    background: rgba(11,17,32,0.8);
-    backdrop-filter: blur(8px);
     position: sticky;
     top: 0;
+    backdrop-filter: blur(12px);
+    background: rgba(15,15,20,0.6);
+    z-index: 1000;
 }
 
 .logo {
     font-weight: 600;
-    font-size: 18px;
-    color: #60a5fa;
+    letter-spacing: 1px;
+    color: #10b981;
 }
 
 .nav-links a {
     margin-left: 20px;
-    color: #cbd5e1;
+    color: #a1a1aa;
     text-decoration: none;
     transition: 0.3s;
 }
 
 .nav-links a:hover {
-    color: #60a5fa;
+    color: #10b981;
 }
 
 /* Hero */
-header {
-    padding: 120px 20px;
-    text-align: center;
-    background: linear-gradient(135deg, #0b1120, #172554);
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
 }
 
-.hero-content h1 {
-    font-size: 44px;
+.hero h1 {
+    font-size: 50px;
     margin-bottom: 20px;
 }
 
-.hero-content h2 {
+.gradient-text {
+    background: linear-gradient(90deg, #10b981, #34d399);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero h2 {
     font-size: 28px;
-    color: #60a5fa;
+    color: #34d399;
     height: 35px;
 }
 
-.hero-desc {
-    margin-top: 20px;
-    color: #94a3b8;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+.hero p {
+    max-width: 500px;
+    margin: 20px 0;
+    color: #a1a1aa;
 }
 
 .hero-buttons {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .btn-primary {
-    background: #3b82f6;
-    color: white;
-    padding: 12px 22px;
+    background: #10b981;
+    padding: 12px 24px;
     border-radius: 6px;
+    color: black;
     text-decoration: none;
     margin-right: 10px;
+    transition: 0.3s;
 }
 
 .btn-primary:hover {
-    background: #2563eb;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(16,185,129,0.3);
 }
 
 .btn-secondary {
-    border: 1px solid #3b82f6;
-    color: #60a5fa;
-    padding: 12px 22px;
+    border: 1px solid #10b981;
+    padding: 12px 24px;
     border-radius: 6px;
+    color: #10b981;
     text-decoration: none;
 }
 
 .btn-secondary:hover {
-    background: #1e293b;
+    background: #10b981;
+    color: black;
 }
 
 section {
     max-width: 1000px;
-    margin: 80px auto;
+    margin: 100px auto;
     padding: 0 20px;
 }
 
 h2 {
-    font-size: 30px;
-    margin-bottom: 30px;
-    color: #60a5fa;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #10b981;
 }
 
 .card {
-    background: #1e293b;
-    padding: 25px;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    background: #18181b;
+    padding: 30px;
+    border-radius: 12px;
     transition: 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 20px rgba(59,130,246,0.2);
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
 }
 
 .sub {
-    color: #94a3b8;
-    margin-bottom: 10px;
+    color: #71717a;
+    margin-bottom: 15px;
 }
 
 .skill {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
+}
+
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
 }
 
 .skill-bar {
-    background: #334155;
     height: 10px;
+    background: #27272a;
     border-radius: 5px;
 }
 
 .skill-fill {
     height: 10px;
     width: 0;
-    background: #3b82f6;
     border-radius: 5px;
+    background: linear-gradient(90deg, #10b981, #34d399);
     transition: width 1.5s ease;
 }
 
 a {
-    color: #60a5fa;
+    color: #34d399;
     text-decoration: none;
 }
 
 a:hover {
-    color: #93c5fd;
+    color: #10b981;
 }
 
 footer {
     text-align: center;
-    padding: 40px;
-    background: #0b1120;
-    color: #64748b;
+    padding: 50px;
+    color: #52525b;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    nav {
+        padding: 15px 20px;
+    }
+
+    .hero {
+        padding: 0 20px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nav-links {
+        display: none;
+    }
 }
