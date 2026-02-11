@@ -8,8 +8,6 @@
 </head>
 <body>
 
-<div class="cursor"></div>
-
 <nav>
     <div class="logo">Shrinivas Umanwar</div>
     <div class="nav-links">
@@ -21,17 +19,19 @@
     </div>
 </nav>
 
-<header>
-    <div class="hero-content">
-        <h1>Hi, I'm Shrinivas Umanwar</h1>
+<header class="hero">
+    <div class="hero-left">
+        <h1>
+            Hi, I'm <span class="gradient-text">Shrinivas</span>
+        </h1>
         <h2><span class="typing"></span></h2>
-        <p class="hero-desc">
-            Building scalable backend APIs and clean Angular integrations
+        <p>
+            Building scalable backend systems and high-performance Angular integrations
             for enterprise-grade applications.
         </p>
         <div class="hero-buttons">
             <a href="assets/resume.pdf" target="_blank" class="btn-primary">Download Resume</a>
-            <a href="#projects" class="btn-secondary">View Projects</a>
+            <a href="#projects" class="btn-secondary">View Work</a>
         </div>
     </div>
 </header>
@@ -39,10 +39,9 @@
 <section id="about">
     <h2>About Me</h2>
     <p>
-        I am a .NET Developer with 1+ year of experience at LTIMindtree,
-        currently working on enterprise applications for Eaton.
-        I specialize in ASP.NET Core Web APIs, Angular frontend integration,
-        and SQL Server database design within Agile environments.
+        .NET Developer at LTIMindtree working on enterprise applications for Eaton.
+        Experienced in ASP.NET Core APIs, Angular integration, SQL optimization,
+        and Agile development workflows.
     </p>
 </section>
 
@@ -52,11 +51,11 @@
         <h3>Software Engineer – LTIMindtree</h3>
         <p class="sub">Client: Eaton | March 2025 – Present</p>
         <ul>
-            <li>Developed RESTful APIs using ASP.NET Core and C#.</li>
-            <li>Implemented Angular UI components integrated with backend services.</li>
-            <li>Optimized SQL Server queries for efficient data retrieval.</li>
-            <li>Worked with Azure DevOps for version control and deployment.</li>
-            <li>Acted as primary offshore developer in a two-member team.</li>
+            <li>Developed scalable REST APIs using ASP.NET Core.</li>
+            <li>Built Angular UI components integrated with backend services.</li>
+            <li>Optimized SQL queries and improved data retrieval performance.</li>
+            <li>Managed deployments via Azure DevOps pipelines.</li>
+            <li>Owned feature delivery as primary offshore developer.</li>
         </ul>
     </div>
 </section>
@@ -66,15 +65,10 @@
     <div class="card">
         <h3>Training Hub</h3>
         <p>
-            Role-based training management system supporting Admin and Member workflows.
+            Role-based training management system with secure JWT authentication
+            and structured workflow approvals.
         </p>
-        <p class="sub"><strong>Tech:</strong> ASP.NET Core, Angular, SQL Server, JWT</p>
-        <ul>
-            <li>Implemented JWT authentication and RBAC.</li>
-            <li>Built REST APIs for training workflows.</li>
-            <li>Designed structured SQL Server schema.</li>
-            <li>Integrated Angular frontend securely with backend.</li>
-        </ul>
+        <p class="sub"><strong>Tech:</strong> ASP.NET Core, Angular, SQL Server</p>
     </div>
 </section>
 
@@ -82,24 +76,25 @@
     <h2>Technical Skills</h2>
 
     <div class="skill">
-        <p>C# / ASP.NET Core</p>
-        <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+        <div class="skill-header">
+            <span>C# / ASP.NET Core</span>
+            <span class="skill-percent">85%</span>
+        </div>
+        <div class="skill-bar">
+            <div class="skill-fill" data-width="85%"></div>
+        </div>
     </div>
 
     <div class="skill">
-        <p>Angular</p>
-        <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
+        <div class="skill-header">
+            <span>Angular</span>
+            <span class="skill-percent">80%</span>
+        </div>
+        <div class="skill-bar">
+            <div class="skill-fill" data-width="80%"></div>
+        </div>
     </div>
 
-    <div class="skill">
-        <p>SQL Server</p>
-        <div class="skill-bar"><div class="skill-fill" data-width="75%"></div></div>
-    </div>
-
-    <div class="skill">
-        <p>Azure DevOps</p>
-        <div class="skill-bar"><div class="skill-fill" data-width="70%"></div></div>
-    </div>
 </section>
 
 <section id="contact">
